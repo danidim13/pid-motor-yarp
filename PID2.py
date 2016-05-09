@@ -28,7 +28,6 @@ class PID:
 		self.input = np.float_(inp)
 	
 	def begin(self,entrada):
-		self.past_t = np.float_(time.clock())
 		self.past_input = np.float_(entrada)
 		
 	def timestep(self, delta_t):
